@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    /* Event Cards */
+    .events-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .event-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .event-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .event-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .event-details {
+      padding: 15px;
+    }
+
+    .event-details h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #000;
+    }
+
+    .event-details p {
+      margin: 6px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .event-details .date {
+      font-weight: bold;
+      color: #333;
+    }
+    /* site nav */
+    .site-nav {
+      background-color: #27108d;
+      text-align: center;
+      padding: 10px 0;
+      margin-bottom: 10px;
+    }
+
+    .site-nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 8px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .site-nav a:hover { opacity: 0.9 }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Upcoming Events</h1>
+  </header>
+
+  <div class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="login.html">Sign in</a>
+    <a href="Register.html">Register</a>
+    <a href="Events.html">Events</a>
+    <a href="CreateEvent.html">Create Event</a>
+    <a href="Bookings.html">Bookings</a>
+  </div>
+
+  <main>
+    <h2>Explore Our Events</h2>
+    <div class="events-container">
+      <!-- Event 1 -->
+      <div class="event-card">
+        <img src="https://www.mastersofevents.com/img/middle-event-min.jpg" alt="Tech Conference" />
+        <div class="event-details">
+          <h3>Annual Tech Conference</h3>
+          <p class="date">November 15, 2025</p>
+          <p>Location: Lusaka Convention Center</p>
+          <p>Join industry leaders to explore the latest in technology and innovation.</p>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="event-card">
+        <img src="https://events.enderuncolleges.com/wp-content/uploads/2019/03/image1-3-825x510.jpg" alt="Music Festival" />
+        <div class="event-details">
+          <h3>Summer Music Festival</h3>
+          <p class="date">December 5, 2025</p>
+          <p>Location: Ndola Stadium</p>
+          <p>A celebration of music, culture, and community with top artists performing live.</p>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="event-card">
+        <img src="https://healycommunications.ie/wp-content/uploads/2023/09/Event-Management-Services.jpeg" alt="Startup Pitch Night" />
+        <div class="event-details">
+          <h3>Startup Pitch Night</h3>
+          <p class="date">January 20, 2026</p>
+          <p>Location: Kitwe Hub</p>
+          <p>Watch innovative startups pitch their ideas to investors and mentors.</p>
+        </div>
+      </div>
+
+      <!-- Event 4 -->
+      <div class="event-card">
+        <img src="https://cdn.siasat.com/wp-content/uploads/2019/11/events-in-hyderabad.jpg" alt="Cultural Gala" />
+        <div class="event-details">
+          <h3>Cultural Gala</h3>
+          <p class="date">February 10, 2026</p>
+          <p>Location: Copperbelt Arts Center</p>
+          <p>An evening of performances, food, and art celebrating diverse cultures.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

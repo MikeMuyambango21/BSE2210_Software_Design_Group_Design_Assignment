@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 400px;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .form-group {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .input-wrapper {
+      position: relative;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px 40px 12px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      background-color: #f1eef3;
+      outline: none;
+    }
+
+    .form-group input:focus {
+      border-color: #7a42f4;
+      box-shadow: 0 0 4px #7a42f4;
+    }
+
+    .clear-btn {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .clear-btn:hover {
+      color: #000;
+    }
+
+    .create-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .create-btn:hover {
+      background-color: #333;
+    }
+    /* site nav */
+    .site-nav {
+      background-color: #27108d;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      top: 8px;
+      left: 0;
+      right: 0;
+      z-index: 50;
+    }
+
+    .site-nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 8px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .site-nav a:hover { opacity: 0.9 }
+  </style>
+</head>
+<body>
+  <div class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="login.html">Sign in</a>
+    <a href="Register.html">Register</a>
+    <a href="Events.html">Events</a>
+    <a href="CreateEvent.html">Create Event</a>
+    <a href="Bookings.html">Bookings</a>
+  </div>
+
+  <div class="container">
+    <h2>CREATE ACCOUNT</h2>
+    <form>
+      <div class="form-group">
+        <label for="fullname">FULL NAME</label>
+        <div class="input-wrapper">
+          <input type="text" id="fullname" placeholder="Enter full name">
+          <button type="button" class="clear-btn" onclick="document.getElementById('fullname').value=''">✖</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">EMAIL</label>
+        <div class="input-wrapper">
+          <input type="email" id="email" placeholder="Enter email">
+          <button type="button" class="clear-btn" onclick="document.getElementById('email').value=''">✖</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">PHONE NUMBER</label>
+        <div class="input-wrapper">
+          <input type="tel" id="phone" placeholder="Enter phone number">
+          <button type="button" class="clear-btn" onclick="document.getElementById('phone').value=''">✖</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="location">LOCATION</label>
+        <div class="input-wrapper">
+          <input type="text" id="location" placeholder="Enter location">
+          <button type="button" class="clear-btn" onclick="document.getElementById('location').value=''">✖</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">PASSWORD</label>
+        <div class="input-wrapper">
+          <input type="password" id="password" placeholder="Enter password">
+          <button type="button" class="clear-btn" onclick="document.getElementById('password').value=''">✖</button>
+        </div>
+      </div>
+
+      <button type="submit" class="create-btn">CREATE</button>
+    </form>
+  </div>
+</body>
+</html>

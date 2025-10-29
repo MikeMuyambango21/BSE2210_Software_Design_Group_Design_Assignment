@@ -1,0 +1,47 @@
+node_modules
+# Keep environment variables out of version control
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor configs
+.vscode/
+.idea/
+
+# Prisma
+prisma/migrations/
+generated/
+
+# Logs
+logs/
+*.log
+
+# Misc
+*.tgz
+
+# Docker
+docker-compose.override.yml
+
+# Windows
+ehthumbs.db
+Desktop.ini

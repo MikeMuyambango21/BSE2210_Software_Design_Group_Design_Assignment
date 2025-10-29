@@ -1,0 +1,19 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "autoincrement",
+    "rsvps",
+    "VITE",
+    "rsvp",
+    "prisma",
+    "Prisma"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "build",
+    "coverage",
+    ".git"
+  ]
+}

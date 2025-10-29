@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 12px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-button:hover {
+      background-color: #333;
+    }
+
+    .forgot-password {
+      display: block;
+      text-align: center;
+      margin-top: 16px;
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+
+    /* site nav */
+    .site-nav {
+      background-color: #27108d;
+      text-align: center;
+      padding: 10px 0;
+      margin-bottom: 16px;
+    }
+
+    .site-nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 8px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .site-nav a:hover { opacity: 0.9 }
+  </style>
+</head>
+<body>
+  <div class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="login.html">Sign in</a>
+    <a href="Register.html">Register</a>
+    <a href="Events.html">Events</a>
+    <a href="CreateEvent.html">Create Event</a>
+    <a href="Bookings.html">Bookings</a>
+  </div>
+  <div class="login-container">
+    <h2>Sign In</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Value" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Value" required />
+      </div>
+      <button type="submit" class="login-button">Sign In</button>
+      <a href="#" class="forgot-password">Forgot password?</a>
+    </form>
+  </div>
+</body>
+</html>

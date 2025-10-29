@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookings Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    /* Bookings Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+      background: #fff;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    table th, table td {
+      padding: 14px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Event Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    /* site nav */
+    .site-nav {
+      background-color: #27108d;
+      text-align: center;
+      padding: 10px 0;
+      margin-bottom: 10px;
+    }
+
+    .site-nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 8px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .site-nav a:hover { opacity: 0.9 }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bookings</h1>
+  </header>
+
+  <div class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="login.html">Sign in</a>
+    <a href="Register.html">Register</a>
+    <a href="Events.html">Events</a>
+    <a href="CreateEvent.html">Create Event</a>
+    <a href="Bookings.html">Bookings</a>
+  </div>
+
+  <main>
+    <!-- Bookings Table -->
+    <section>
+      <h2>Your Bookings</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Annual Tech Conference</td>
+            <td>2025-11-15</td>
+            <td>Lusaka Convention Center</td>
+            <td>Confirmed</td>
+          </tr>
+          <tr>
+            <td>Music Festival</td>
+            <td>2025-12-05</td>
+            <td>Ndola Stadium</td>
+            <td>Pending</td>
+          </tr>
+          <tr>
+            <td>Startup Pitch Night</td>
+            <td>2026-01-20</td>
+            <td>Kitwe Hub</td>
+            <td>Confirmed</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Event Images Gallery -->
+    <section>
+      <h2>Event Highlights</h2>
+      <div class="gallery">
+        <img src="https://www.mastersofevents.com/img/middle-event-min.jpg" alt="Event 1" />
+        <img src="https://events.enderuncolleges.com/wp-content/uploads/2019/03/image1-3-825x510.jpg" alt="Event 2" />
+        <img src="https://healycommunications.ie/wp-content/uploads/2023/09/Event-Management-Services.jpeg" alt="Event 3" />
+        <img src="https://cdn.siasat.com/wp-content/uploads/2019/11/events-in-hyderabad.jpg" alt="Event 4" />
+      </div>
+    </section>
+  </main>
+</body>
+</html>
